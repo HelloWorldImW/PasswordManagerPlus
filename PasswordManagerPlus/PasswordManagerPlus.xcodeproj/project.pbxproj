@@ -13,6 +13,8 @@
 		D820D52425230C69007CB507 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D820D52325230C69007CB507 /* Preview Assets.xcassets */; };
 		D820D52625230C69007CB507 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D820D52525230C69007CB507 /* Persistence.swift */; };
 		D820D52925230C69007CB507 /* PasswordManagerPlus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D820D52725230C69007CB507 /* PasswordManagerPlus.xcdatamodeld */; };
+		D8C0864C252772AC00BCBC3F /* ZHPasswordItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C0864B252772AC00BCBC3F /* ZHPasswordItemList.swift */; };
+		D8C086502527738E00BCBC3F /* ZHSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C0864F2527738E00BCBC3F /* ZHSearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D820D52525230C69007CB507 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		D820D52825230C69007CB507 /* PasswordManagerPlus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PasswordManagerPlus.xcdatamodel; sourceTree = "<group>"; };
 		D820D52A25230C69007CB507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8C0864B252772AC00BCBC3F /* ZHPasswordItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHPasswordItemList.swift; sourceTree = "<group>"; };
+		D8C0864F2527738E00BCBC3F /* ZHSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHSearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +60,10 @@
 		D820D51B25230C68007CB507 /* PasswordManagerPlus */ = {
 			isa = PBXGroup;
 			children = (
-				D820D51C25230C68007CB507 /* PasswordManagerPlusApp.swift */,
 				D820D51E25230C68007CB507 /* ContentView.swift */,
-				D820D52025230C69007CB507 /* Assets.xcassets */,
-				D820D52525230C69007CB507 /* Persistence.swift */,
-				D820D52A25230C69007CB507 /* Info.plist */,
-				D820D52725230C69007CB507 /* PasswordManagerPlus.xcdatamodeld */,
+				D8C0864B252772AC00BCBC3F /* ZHPasswordItemList.swift */,
+				D8C0864F2527738E00BCBC3F /* ZHSearchBar.swift */,
+				D8C086492527726000BCBC3F /* Resources */,
 				D820D52225230C69007CB507 /* Preview Content */,
 			);
 			path = PasswordManagerPlus;
@@ -73,6 +75,18 @@
 				D820D52325230C69007CB507 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D8C086492527726000BCBC3F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D820D52025230C69007CB507 /* Assets.xcassets */,
+				D820D52525230C69007CB507 /* Persistence.swift */,
+				D820D52A25230C69007CB507 /* Info.plist */,
+				D820D52725230C69007CB507 /* PasswordManagerPlus.xcdatamodeld */,
+				D820D51C25230C68007CB507 /* PasswordManagerPlusApp.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +159,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D820D52925230C69007CB507 /* PasswordManagerPlus.xcdatamodeld in Sources */,
+				D8C086502527738E00BCBC3F /* ZHSearchBar.swift in Sources */,
 				D820D52625230C69007CB507 /* Persistence.swift in Sources */,
+				D8C0864C252772AC00BCBC3F /* ZHPasswordItemList.swift in Sources */,
 				D820D51F25230C68007CB507 /* ContentView.swift in Sources */,
 				D820D51D25230C68007CB507 /* PasswordManagerPlusApp.swift in Sources */,
 			);
@@ -278,7 +294,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PasswordManagerPlus/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = PasswordManagerPlus/Info.plist;
+				INFOPLIST_FILE = PasswordManagerPlus/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,7 +315,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PasswordManagerPlus/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = PasswordManagerPlus/Info.plist;
+				INFOPLIST_FILE = PasswordManagerPlus/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
